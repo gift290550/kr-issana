@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio - กฤษณา หงษ์ทัพ (กิ๊ฟ)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#f4f7f4',
+                            100: '#e3ebe3',
+                            200: '#c5d7c5',
+                            500: '#6b8e6b',
+                            600: '#527252',
+                            700: '#3d563d',
+                            800: '#2c3e2c',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-sage-50 text-gray-700 antialiased selection:bg-sage-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-sage-100">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-sage-700 text-lg tracking-tight">K. HONGTHAP</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-sage-600 transition">เกี่ยวกับฉัน</a>
+                <a href="#education" class="hover:text-sage-600 transition">ประวัติการศึกษา</a>
+                <a href="#internship" class="hover:text-sage-600 transition">ประสบการณ์ฝึกงาน</a>
+                <a href="#skills" class="hover:text-sage-600 transition">ทักษะ</a>
+                <a href="#contact" class="hover:text-sage-600 transition">ติดต่อ</a>
+            </div>
+            <a href="#contact" class="bg-sage-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-sage-700 transition shadow-sm">
+                ติดต่อสอบถาม
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6 bg-gradient-to-b from-white to-sage-50">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div class="relative group">
+                <div class="w-48 h-48 md:w-56 md:h-56 rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-sage-100 flex items-center justify-center text-sage-500">
+                    <!-- Icon / Image Fallback -->
+                    <i data-lucide="user" class="w-24 h-24 stroke-[1.5]"></i>
+                </div>
+                <div class="absolute -bottom-2 -right-2 bg-sage-600 text-white p-3 rounded-2xl shadow-lg">
+                    <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+                </div>
+            </div>
+            <div class="text-center md:text-left flex-1">
+                <span class="inline-block bg-sage-100 text-sage-700 text-xs px-3.5 py-1.5 rounded-full font-semibold mb-3 tracking-wide">
+                    ACADEMIC PORTFOLIO
+                </span>
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">กฤษณา หงษ์ทัพ</h1>
+                <p class="text-lg text-sage-600 font-medium mb-4">ชื่อเล่น: กิ๊ฟ | สาขาวิชาสาธารณสุขชุมชน</p>
+                <p class="text-gray-600 text-sm leading-relaxed max-w-xl">
+                    มุ่งมั่นพัฒนาทักษะด้านงานสาธารณสุขและการดูแลสุขภาพชุมชน มีประสบการณ์ฝึกปฏิบัติงานจริงในสถานพยาบาล
+                    พร้อมเรียนรู้และประยุกต์ใช้เทคโนโลยีในการทำงาน
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Personal Info Section -->
+        <section id="about" class="bg-white rounded-3xl p-8 shadow-sm border border-sage-100">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <span class="w-2 h-7 bg-sage-500 rounded-full inline-block"></span>
+                ข้อมูลส่วนตัว
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm">
+                <div class="p-4 rounded-2xl bg-sage-50/60 border border-sage-100">
+                    <p class="text-xs text-gray-400 mb-1">อายุ</p>
+                    <p class="font-semibold text-gray-800 text-base">19 ปี</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-sage-50/60 border border-sage-100">
+                    <p class="text-xs text-gray-400 mb-1">หมู่เลือด</p>
+                    <p class="font-semibold text-gray-800 text-base">AB</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-sage-50/60 border border-sage-100">
+                    <p class="text-xs text-gray-400 mb-1">วันเกิด</p>
+                    <p class="font-semibold text-gray-800 text-base">29 พ.ค. 2550</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-sage-50/60 border border-sage-100">
+                    <p class="text-xs text-gray-400 mb-1">ส่วนสูง / น้ำหนัก</p>
+                    <p class="font-semibold text-gray-800 text-base">154 ซม. / 55 กก.</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-sage-50/60 border border-sage-100">
+                    <p class="text-xs text-gray-400 mb-1">สัญชาติ / เชื้อชาติ</p>
+                    <p class="font-semibold text-gray-800 text-base">ไทย / ไทย</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-sage-50/60 border border-sage-100">
+                    <p class="text-xs text-gray-400 mb-1">ศาสนา</p>
+                    <p class="font-semibold text-gray-800 text-base">พุทธ</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-sage-50/60 border border-sage-100 sm:col-span-2">
+                    <p class="text-xs text-gray-400 mb-1">แผนการเรียนระดับมัธยม</p>
+                    <p class="font-semibold text-gray-800 text-base">วิทยาศาสตร์ - คณิตศาสตร์</p>
+                </div>
+            </div>
+
+            <!-- Hobbies -->
+            <div class="mt-8 pt-6 border-t border-gray-100">
+                <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">งานอดิเรก (Hobbies)</h3>
+                <div class="flex flex-wrap gap-2.5">
+                    <span class="px-4 py-2 rounded-xl bg-sage-50 text-sage-700 text-sm font-medium border border-sage-100 flex items-center gap-2">
+                        <i data-lucide="moon" class="w-4 h-4"></i> นอนพักผ่อน
+                    </span>
+                    <span class="px-4 py-2 rounded-xl bg-sage-50 text-sage-700 text-sm font-medium border border-sage-100 flex items-center gap-2">
+                        <i data-lucide="gamepad-2" class="w-4 h-4"></i> เล่นเกม
+                    </span>
+                    <span class="px-4 py-2 rounded-xl bg-sage-50 text-sage-700 text-sm font-medium border border-sage-100 flex items-center gap-2">
+                        <i data-lucide="sticker" class="w-4 h-4"></i> สะสม/ติดสติ๊กเกอร์
+                    </span>
+                    <span class="px-4 py-2 rounded-xl bg-sage-50 text-sage-700 text-sm font-medium border border-sage-100 flex items-center gap-2">
+                        <i data-lucide="utensils" class="w-4 h-4"></i> ทำอาหาร
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education History -->
+        <section id="education" class="bg-white rounded-3xl p-8 shadow-sm border border-sage-100">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+                <span class="w-2 h-7 bg-sage-500 rounded-full inline-block"></span>
+                ประวัติการศึกษา
+            </h2>
+            <div class="relative border-l-2 border-sage-200 ml-4 space-y-8">
+                <!-- Bachelor -->
+                <div class="relative pl-6 group">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-sage-500 border-4 border-white group-hover:scale-125 transition"></div>
+                    <span class="text-xs font-semibold text-sage-600 bg-sage-100 px-3 py-1 rounded-full">ปีการศึกษา 2569</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-2">ปริญญาตรี สาขาวิชาสาธารณสุขชุมชน</h3>
+                    <p class="text-gray-600 text-sm">วิทยาลัยการสาธารณสุขสิรินธร จังหวัดขอนแก่น</p>
+                </div>
+                <!-- Senior High School -->
+                <div class="relative pl-6 group">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-sage-300 border-4 border-white group-hover:scale-125 transition"></div>
+                    <span class="text-xs font-semibold text-sage-600 bg-sage-100 px-3 py-1 rounded-full">ปีการศึกษา 2568</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-2">มัธยมศึกษาตอนปลาย (สายวิทย์-คณิต)</h3>
+                    <p class="text-gray-600 text-sm">โรงเรียนชุมแพศึกษา</p>
+                </div>
+                <!-- Junior High School -->
+                <div class="relative pl-6 group">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-sage-300 border-4 border-white group-hover:scale-125 transition"></div>
+                    <span class="text-xs font-semibold text-sage-600 bg-sage-100 px-3 py-1 rounded-full">ปีการศึกษา 2562</span>
+                    <h3 class="text-lg font-bold text-gray-900 mt-2">มัธยมศึกษาตอนต้น</h3>
+                    <p class="text-gray-600 text-sm">โรงเรียนชุมแพศึกษา</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Experience -->
+        <section id="internship" class="bg-white rounded-3xl p-8 shadow-sm border border-sage-100">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <span class="w-2 h-7 bg-sage-500 rounded-full inline-block"></span>
+                ประสบการณ์ฝึกงาน
+            </h2>
+            <div class="bg-sage-50/60 p-6 rounded-2xl border border-sage-100">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                    <h3 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+                        <i data-lucide="building-2" class="w-5 h-5 text-sage-600"></i>
+                        โรงพยาบาลชุมแพ
+                    </h3>
+                    <span class="text-xs font-semibold text-sage-700 bg-sage-200/70 px-3 py-1 rounded-full w-fit">
+                        ระยะเวลา 10 วัน
+                    </span>
+                </div>
+                <p class="text-xs text-gray-500 mb-4 flex items-center gap-1">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> อำเภอชุมแพ จังหวัดขอนแก่น
+                </p>
+                <p class="text-sm text-gray-700 mb-4">
+                    ได้รับโอกาสในการฝึกประสบการณ์วิชาชีพเบื้องต้น ปฏิบัติงานร่วมกับบุคลากรทางการแพทย์ในวอร์ดผู้ป่วย:
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                    <div class="flex items-start gap-3 bg-white p-3 rounded-xl border border-sage-100 shadow-2xs">
+                        <i data-lucide="activity" class="w-5 h-5 text-sage-500 flex-shrink-0 mt-0.5"></i>
+                        <span>ตรวจวัดสัญญาณชีพ ค่าวัดความดัน อัตราการเต้นของหัวใจ และชีพจร</span>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-3 rounded-xl border border-sage-100 shadow-2xs">
+                        <i data-lucide="thermometer" class="w-5 h-5 text-sage-500 flex-shrink-0 mt-0.5"></i>
+                        <span>ประเมินค่าวัดไข้และดูแลผู้ป่วยเบื้องต้น</span>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-3 rounded-xl border border-sage-100 shadow-2xs">
+                        <i data-lucide="test-tube" class="w-5 h-5 text-sage-500 flex-shrink-0 mt-0.5"></i>
+                        <span>จัดส่งสิ่งส่งตรวจและตัวอย่างเลือดไปยังห้องปฏิบัติการ (Lab)</span>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-3 rounded-xl border border-sage-100 shadow-2xs">
+                        <i data-lucide="boxes" class="w-5 h-5 text-sage-500 flex-shrink-0 mt-0.5"></i>
+                        <span>บริหารจัดการเบิกและสต็อกเวชภัณฑ์สำหรับใช้งานในวอร์ด</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-white rounded-3xl p-8 shadow-sm border border-sage-100">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                <span class="w-2 h-7 bg-sage-500 rounded-full inline-block"></span>
+                ทักษะและความสามารถ
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- General Skills -->
+                <div class="p-6 rounded-2xl bg-sage-50/50 border border-sage-100">
+                    <h3 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="sparkles" class="w-5 h-5 text-sage-500"></i> ทักษะทั่วไป (General Skills)
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white px-3.5 py-2 rounded-xl text-sm border border-sage-100 shadow-2xs">ร้องเพลง</span>
+                        <span class="bg-white px-3.5 py-2 rounded-xl text-sm border border-sage-100 shadow-2xs">รำไทย</span>
+                        <span class="bg-white px-3.5 py-2 rounded-xl text-sm border border-sage-100 shadow-2xs">เต้น</span>
+                        <span class="bg-white px-3.5 py-2 rounded-xl text-sm border border-sage-100 shadow-2xs">ตัดต่อวิดีโอ</span>
+                    </div>
+                </div>
+
+                <!-- Software Skills -->
+                <div class="p-6 rounded-2xl bg-sage-50/50 border border-sage-100">
+                    <h3 class="font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="laptop" class="w-5 h-5 text-sage-500"></i> โปรแกรมประยุกต์ (Software)
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white px-3.5 py-2 rounded-xl text-sm border border-sage-100 font-medium text-sage-700 shadow-2xs">
+                            Microsoft Word
+                        </span>
+                        <span class="bg-white px-3.5 py-2 rounded-xl text-sm border border-sage-100 font-medium text-sage-700 shadow-2xs">
+                            Canva
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-sage-700 text-white rounded-3xl p-8 md:p-12 shadow-lg">
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-2">ช่องทางการติดต่อ</h2>
+                <p class="text-sage-200 text-sm mb-8">สามารถสอบถามข้อมูลเพิ่มเติมหรือติดต่อได้ตามช่องทางด้านล่าง</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left text-sm">
+                    <a href="tel:0825421476" class="bg-sage-800/60 hover:bg-sage-800 p-4 rounded-2xl transition border border-sage-600/40 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="phone" class="w-5 h-5 text-sage-200"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <p class="text-xs text-sage-300">เบอร์โทรศัพท์</p>
+                            <p class="font-semibold truncate">082-542-1476</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:gift290550@gmail.com" class="bg-sage-800/60 hover:bg-sage-800 p-4 rounded-2xl transition border border-sage-600/40 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="mail" class="w-5 h-5 text-sage-200"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <p class="text-xs text-sage-300">อีเมล</p>
+                            <p class="font-semibold truncate">gift290550@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <div class="bg-sage-800/60 p-4 rounded-2xl border border-sage-600/40 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="message-square" class="w-5 h-5 text-sage-200"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <p class="text-xs text-sage-300">Line ID</p>
+                            <p class="font-semibold truncate">0972043658</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-sage-800/60 p-4 rounded-2xl border border-sage-600/40 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="facebook" class="w-5 h-5 text-sage-200"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <p class="text-xs text-sage-300">Facebook</p>
+                            <p class="font-semibold truncate">krissana hongthap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-xs text-gray-400 border-t border-sage-100 mt-12">
+        <p>&copy; 2026 Krissana Hongthap. All rights reserved.</p>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
